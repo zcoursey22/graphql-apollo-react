@@ -1,0 +1,35 @@
+{
+  "name": "graphql-apollo-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zcoursey22/graphql-apollo-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zcoursey22/graphql-apollo-react/issues"
+  },
+  "homepage": "https://github.com/zcoursey22/graphql-apollo-react#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.18.4",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2"
+  }
+}

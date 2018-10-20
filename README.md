@@ -1,1 +1,1 @@
-# graphql-appolo-react
+# react-social-network
