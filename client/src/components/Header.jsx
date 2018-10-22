@@ -16,7 +16,8 @@ class Header extends Component {
         border-bottom-right-radius: 0;
         border: none;
         font-size: 14px;
-        padding: 5px 10px;
+        padding: 5px 15px;
+        width: 400px;
       }
       > button {
         color: #222;
@@ -46,7 +47,6 @@ class Header extends Component {
       }
       .logo {
         filter: invert(100%) brightness(5);
-        margin-right: 15px;
         &:hover {
           background: rgba(0,0,0,0);
         }
@@ -61,7 +61,7 @@ class Header extends Component {
 
     return (
       <Navbar>
-        <LinkImage to="/"><img class="logo" src="https://png.pngtree.com/svg/20170506/fb_icon_601409.png"></img></LinkImage>
+        <LinkImage to="/"><img className="logo" src="https://png.pngtree.com/svg/20170506/fb_icon_601409.png"></img></LinkImage>
         <input type="text" placeholder="Search"></input>
         <button><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Simpleicons_Interface_magnifier-1.svg"></img></button>
         <LinkImage to="/profile"><img src="http://www.kmids.ac.th/wp-content/uploads/2017/10/silhouetteman.png"></img></LinkImage>
