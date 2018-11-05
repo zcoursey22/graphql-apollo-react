@@ -7,9 +7,10 @@ import styled from 'styled-components';
 class Home extends Component {
   render() {
     const HomeWrapper = styled.div`
+      padding-top: 55px;
       display: flex;
-      justify-content: center;
       flex-direction: row;
+      justify-content: center;
       > * {
         align-self: flex-start;
       }
@@ -24,7 +25,7 @@ class Home extends Component {
     return (
       <HomeWrapper>
         <NewPostBox />
-        <Posts />
+        <Posts onProfile={ false }/>
       </HomeWrapper>
     )
   }

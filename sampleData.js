@@ -18,11 +18,53 @@ module.exports = {
     },
     {
       user: {
-        name: 'Brian Branson',
+        name: 'Brian Brianhall',
         picture: 'https://i2.wp.com/whysquare.co.nz/wp-content/uploads/2013/07/profile_square3.jpg?resize=270%2C270'
       },
       time: '4 hrs',
       text: 'I wonder how much they bothered to remove from the ride after it was closed? I like to think that the Horned King and his un-dead army are still down there, plotting their revenge...﻿'
+    },
+    {
+      user: {
+        name: 'Ann Aniston',
+        picture: 'https://dieteticallyspeaking.com/wp-content/uploads/2017/01/profile-square.jpg'
+      },
+      time: '7hrs',
+      text: 'If your teen movie doesn\'t start with the main characters morning routine and doesn\'t continue with them going to school... is it really a teen movie?﻿'
+    },
+    {
+      user: {
+        name: 'Geoff Geoffries',
+        picture: 'https://img.huffingtonpost.com/asset/59c63245190000290056549c.jpg?ops=scalefit_720_noupscale'
+      },
+      time: '10 hrs',
+      text: 'Boba Fett does exactly what he’s called on to do. Hunts his bounty. He finds Solo, collects bounty from Vader. Takes Solo to Jabba, collects bounty. Job done.﻿'
+    },
+    {
+      user: {
+        name: 'Jennifer Jenson',
+        picture: 'https://qbtei.com/cms/uploads/profile-photo-square.jpg'
+      },
+      time: '12 hrs',
+      text: 'The minute you arrive in New Orleans you\'ll noticed the music in the air even without hearing any notes. And that\'s why the whole world comes to the city to learn the music and the feeling.'
+    }
+  ],
+  yourPosts: [
+    {
+      user: {
+        name: 'Zach Coursey',
+        picture: 'https://pbs.twimg.com/profile_images/1034993683664273408/yRX07Kna_400x400.jpg'
+      },
+      time: '5 hrs',
+      text: 'Beep beep orange man bad!'
+    },
+    {
+      user: {
+        name: 'Zach Coursey',
+        picture: 'https://pbs.twimg.com/profile_images/1034993683664273408/yRX07Kna_400x400.jpg'
+      },
+      time: '8 hrs',
+      text: 'Hello darkness my old friend.....'
     }
   ]
 }

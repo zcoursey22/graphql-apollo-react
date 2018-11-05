@@ -22,7 +22,6 @@ class NewPostBox extends Component {
       overflow: hidden;
       border: 1px solid #ddd;
       border-radius: 5px;
-      width: 500px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -51,12 +50,14 @@ class NewPostBox extends Component {
       border-top: 1px solid #ddd;
       transition: 0.2s ease;
       > button {
-        filter: ${this.state.value === '' ? 'brightness(2) saturate(0%) contrast(90%)' : null};
+        filter: ${this.state.value === '' ? 'brightness(2.5) saturate(30%) contrast(90%)' : null};
         background: #068484;
         color: white;
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 900;
         margin: 8px;
-        padding: 3px 12px;
+        margin-right: 13px;
+        padding: 2px 12px;
         border: 1px solid #057373;
         border-radius: 3px;
         cursor: ${this.state.value === '' ? 'auto' : 'pointer'};

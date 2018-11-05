@@ -19,6 +19,9 @@ class Header extends Component {
 
   render() {
     const Navbar = styled.div`
+      z-index: 1000;
+      position: fixed;
+      width: 100vw;
       background: #068484;
       display: flex;
       justify-content: space-around;

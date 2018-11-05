@@ -15,6 +15,14 @@ class Posts extends Component {
       }
     `;
 
+    const yourPosts = sampleData.yourPosts.map((post, i) => {
+      return (
+        <li key={ "yourPost" + i }>
+          <Post post={ post }></Post>
+        </li>
+      );
+    });
+
     const allPosts = sampleData.posts.map((post, i) => {
       return (
         <li key={ "post" + i }>
@@ -26,7 +34,7 @@ class Posts extends Component {
     return (
       <div>
         <PostsWrapper>
-          { allPosts }
+          { this.props.onProfile ? yourPosts : allPosts }
         </PostsWrapper>
       </div>
     )

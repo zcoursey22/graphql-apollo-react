@@ -16,13 +16,13 @@ class Post extends Component {
       border: 1px solid #ddd;
       border-radius: 5px;
       width: 100%;
-      margin: 12px 0;
+      margin: 18px 0;
       &:nth-of-type(1) {
         margin-top: 0;
       }
       box-shadow: 0 8px 5px -5px rgba(0,0,0,0.5);
       > p {
-        padding: 8px 15px;
+        padding: 3px 15px;
         padding-top: 15px;
       }
     `;
@@ -89,6 +89,10 @@ class Post extends Component {
           filter: brightness(80%);
         }
       }
+      > #shareButton {
+        float: right;
+        margin-right: 5px;
+      }
     `;
 
     const Popup = styled.div`
@@ -125,6 +129,7 @@ class Post extends Component {
           <InteractionDiv>
             <button>Like</button>
             <button>Comment</button>
+            <button id="shareButton">Share</button>
           </InteractionDiv>
         </PostDiv>
 
