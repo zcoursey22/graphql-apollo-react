@@ -16,15 +16,25 @@ class Home extends Component {
       }
       > *:nth-child(1) {
         flex-basis: 23%;
+        position: relative;
+        > * {
+          width: 23%;
+          position: fixed;
+          z-index: 150;
+        }
       }
       > *:nth-child(2) {
+        width: 18px;
+      }
+      > *:nth-child(3) {
         flex-basis: 43%;
       }
     `;
 
     return (
       <HomeWrapper>
-        <NewPostBox />
+        <div><NewPostBox /></div>
+        <div></div>
         <Posts onProfile={ false }/>
       </HomeWrapper>
     )

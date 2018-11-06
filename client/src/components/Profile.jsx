@@ -150,9 +150,6 @@ class Profile extends Component {
       background: white;
       border: 1px solid #ddd;
       border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
       box-shadow: 0 8px 5px -5px rgba(0,0,0,0.5);
       > h2 {
         font-size: 20px;
@@ -183,6 +180,7 @@ class Profile extends Component {
         </NavButtons>
         <Content>
           <UserInfo>
+            
             <About>
               <h2>About</h2>
               <ul>
@@ -196,17 +194,12 @@ class Profile extends Component {
 
             <Photos>
               <h2>Photos</h2>
-              <ul>
-
-              </ul>
             </Photos>
 
             <Friends>
               <h2>Friends</h2>
-              <ul>
-                
-              </ul>
             </Friends>
+
           </UserInfo>
           <PostContent>
             <NewPostBox />
