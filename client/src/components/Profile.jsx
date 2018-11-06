@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
-import NewPostBox from './NewPostBox.jsx';
-import Posts from './Posts.jsx';
+import ProfileHome from './ProfileHome.jsx';
 
 class Profile extends Component {
   render() {
@@ -36,7 +35,7 @@ class Profile extends Component {
         background-image: url("https://pbs.twimg.com/profile_images/1034993683664273408/yRX07Kna_400x400.jpg");
         background-size: cover;
         background-position: center;
-        border: 8px solid white;
+        border: 6px solid white;
       }
       > #coverPic {
         position: absolute;
@@ -87,126 +86,28 @@ class Profile extends Component {
       }
     `;
 
-    const Content = styled.div`
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      padding-top: 8px;
-      > * {
-        flex-shrink: 0;
-        flex-basis: 600px;
-        align-self: flex-start;
-      }
-      > *:nth-of-type(1) {
-        align-self: flex-start;
-        flex-basis: 450px;
-      }
-    `;
-
-    const UserInfo = styled.div`
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    `;
-
-    const About = styled.div`
-      margin: 8px;
-      padding: 12px;
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      box-shadow: 0 8px 5px -5px rgba(0,0,0,0.5);
-      > h2 {
-        font-size: 20px;
-        padding-bottom: 10px;
-      }
-      > ul > li {
-        font-size: 14px;
-        padding: 8px 0;
-      }
-    `;
-
-    const Photos = styled.div`
-      margin: 8px;
-      padding: 12px;
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      box-shadow: 0 8px 5px -5px rgba(0,0,0,0.5);
-      > h2 {
-        font-size: 20px;
-        padding-bottom: 10px;
-      }
-    `;
-
-    const Friends = styled.div`
-      margin: 8px;
-      padding: 12px;
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      box-shadow: 0 8px 5px -5px rgba(0,0,0,0.5);
-      > h2 {
-        font-size: 20px;
-        padding-bottom: 10px;
-      }
-    `;
-
-    const PostContent = styled.div`
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    `;
-
     return (
       <ProfileWrapper>
+
         <UserHeader>
           <h1>Zach Coursey</h1>
           <div id="profilePic"></div>
           <div id="coverPic"></div>
           <div id="vignette"></div>
         </UserHeader>
+
         <NavButtons>
           <button><NavLink to='/profile'>Home</NavLink></button>
           <button><NavLink to='/profile/about'>About</NavLink></button>
           <button><NavLink to='/profile/photos'>Photos</NavLink></button>
           <button><NavLink to='/profile/friends'>Friends</NavLink></button>
-          <button><NavLink to='/profile/settings'>Settings</NavLink></button>
+          <button><NavLink to='/profile/settings'>More</NavLink></button>
         </NavButtons>
-        <Content>
-          <UserInfo>
 
-            <About>
-              <h2>About</h2>
-              <ul>
-                <li>Studied Criminology at Florida State University</li>
-                <li>Lives in Tallahassee, Florida</li>
-                <li>From Keystone Heights, Florida</li>
-                <li>In a relationship with Erika Dingman</li>
-                <li>Joined November 2018</li>
-              </ul>
-            </About>
+        <Switch>
+          <Route exact path='/profile' component={ProfileHome}/>
+        </Switch>
 
-            <Photos>
-              <h2>Photos</h2>
-            </Photos>
-
-            <Friends>
-              <h2>Friends</h2>
-            </Friends>
-
-          </UserInfo>
-          <PostContent>
-            <NewPostBox />
-            <Posts onProfile={ true }/>
-          </PostContent>
-        </Content>
       </ProfileWrapper>
     )
   }
