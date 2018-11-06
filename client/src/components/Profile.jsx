@@ -70,7 +70,7 @@ class Profile extends Component {
         border-left: 1px solid #ddd;
       }
       > button {
-        flex-basis: 9%;
+        flex-basis: 150px;
         font-size: 16px;
         border: none;
         border-right: 1px solid #ddd;
@@ -93,12 +93,13 @@ class Profile extends Component {
       flex-direction: row;
       padding-top: 8px;
       > * {
-        flex-basis: 40%;
+        flex-shrink: 0;
+        flex-basis: 600px;
         align-self: flex-start;
       }
       > *:nth-of-type(1) {
         align-self: flex-start;
-        flex-basis: 25%;
+        flex-basis: 450px;
       }
     `;
 
@@ -180,7 +181,7 @@ class Profile extends Component {
         </NavButtons>
         <Content>
           <UserInfo>
-            
+
             <About>
               <h2>About</h2>
               <ul>

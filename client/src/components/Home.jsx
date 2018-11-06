@@ -15,10 +15,10 @@ class Home extends Component {
         align-self: flex-start;
       }
       > *:nth-child(1) {
-        flex-basis: 23%;
+        flex-basis: 450px;
         position: relative;
         > * {
-          width: 23%;
+          width: 450px;
           position: fixed;
           z-index: 150;
         }
@@ -27,7 +27,7 @@ class Home extends Component {
         width: 18px;
       }
       > *:nth-child(3) {
-        flex-basis: 43%;
+        flex-basis: 600px;
       }
     `;
 
