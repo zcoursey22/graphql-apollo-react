@@ -60,7 +60,30 @@ class Header extends Component {
           background: #ddd;
         }
       }
+    `;
 
+    const ProfileInfo = styled.div`
+      > #picAndName {
+        transition: 0.2s ease;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 8px;
+        margin-right: 15px;
+        > img {
+          width: 28px;
+          border-radius: 50%;
+          margin-right: 12px;
+        }
+        > span {
+          color: white;
+          font-size: 14px;
+        }
+        &:hover {
+          background: rgba(0,0,0,0.15);
+          border-radius: 5px;
+        }
+      }
     `;
 
     const LinkImage = styled(NavLink)`
@@ -96,11 +119,15 @@ class Header extends Component {
           <input type="text" placeholder="Search" onChange={ (e) => this.handleChange(e.target.value) }></input>
           <button><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Simpleicons_Interface_magnifier-1.svg"></img></button>
         </div>
-        <div>
-          <LinkImage to="/profile"><img src="http://www.kmids.ac.th/wp-content/uploads/2017/10/silhouetteman.png"></img></LinkImage>
+        <ProfileInfo>
+          <NavLink id="picAndName" to="/profile">
+            <img src="https://pbs.twimg.com/profile_images/1034993683664273408/yRX07Kna_400x400.jpg"></img>
+            <span>Zach</span>
+          </NavLink>
+          <LinkImage to="/friends"><img src="http://www.kmids.ac.th/wp-content/uploads/2017/10/silhouetteman.png"></img></LinkImage>
           <LinkImage to="/messages"><img src="https://user-images.githubusercontent.com/1915993/32196425-b3e7e484-bdd1-11e7-92ef-b65c5eb8b307.png"></img></LinkImage>
           <LinkImage to="/notifications"><img src="https://png2.kisspng.com/20180410/qtw/kisspng-globe-computer-icons-world-clip-art-free-tag-5acc409f97bf80.6339427515233353276216.png"></img></LinkImage>
-        </div>
+        </ProfileInfo>
       </Navbar>
     );
   }
